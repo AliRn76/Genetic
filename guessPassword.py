@@ -57,11 +57,11 @@ while True:
     i += 1
     child = mutate(bestParent)
     childFitness = get_fitness(child)
-    display(child)
+
     if bestFitness >= childFitness:
         continue
 
-
+    display(child)
 
     if childFitness >= len(bestParent):
 

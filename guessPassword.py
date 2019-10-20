@@ -3,8 +3,8 @@ import datetime
 
 # Genes
 
-geneSet = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!."
-target = "Hello World!"
+geneSet = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+,./'][;`-=}{:?><~\""
+target = "Al1vAmp1re2252"
 
 
 # Generate a Guess
@@ -57,11 +57,11 @@ while True:
     i += 1
     child = mutate(bestParent)
     childFitness = get_fitness(child)
-
+    display(child)
     if bestFitness >= childFitness:
         continue
 
-    display(child)
+
 
     if childFitness >= len(bestParent):
 
